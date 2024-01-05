@@ -1,10 +1,13 @@
 # Imports
 from flask import Flask
 
+# Define the app
+app = Flask(__name__)
+
 # Endpoints
 @app.route('/')
 def index():
-    return "";
+    return "We made it!";
 
 # Runtime configuration
 if __name__ == '__main__':
