@@ -12,7 +12,7 @@ def index():
 @app.route('/post', methods=['POST'])
 def post():
     data_to_return = request.form.get('message')
-    return message
+    return data_to_return
 
 # Runtime configuration
 if __name__ == '__main__':
